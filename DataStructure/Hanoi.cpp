@@ -1,7 +1,9 @@
 #include"Hanoi.h"
 
 void move(char from, int n, char to) {
-	printf("move %d from %c to %c \n",n, from, to);
+	static int times=1;
+	printf("%d. move %d from %c to %c \n",times,n, from, to);
+	times++;
 }
 void solve(int n, char x, char y, char z) {
 	if (n == 1) move(x,1, z);

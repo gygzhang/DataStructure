@@ -6,6 +6,8 @@
 #define y 'y'
 #define z 'z'*/
 
+//static int times=0;
+
 void move(char from,int n,char to);
 
 void solve(int n,char x,char y, char z);
